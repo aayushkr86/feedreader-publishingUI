@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TECH-JUMP: Your One Stop For All Things Technology</title>
+
+    <!--Favicon link-->
+    <link rel="shortcut icon" href="./images/TJ-favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./css/custom.css" rel="stylesheet">
+    <!-- Roboto Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid" id="nav-pad">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span style="font-weight: 400">TECH</span><span style="font-weight: 900">⚡JUMP</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li>
+                        <a href="#">
+                            <form id="searchRequest">
+                                <div class="input-group search-bar">
+                                    <input type="text" placeholder="Search this site..." class="form-control" id="search-bar" required>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" id="search-button" type="submit">
+                                            <span class="glyphicon glyphicon-search" style="color: white"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </a>
+                    </li>-->
+                    <li class="text-center">
+                        <a data-toggle="modal" href="#subscribeModal">
+                            <button class="btn btn-default" name="subscribe" id="subscribe-button" style="background-color: #202020">
+                                SUBSCRIBE &nbsp<span class="glyphicon glyphicon-envelope" style="color: white"></span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="dropdown active text-center" id="categories-li">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown">
+                            <button style="background-color: #202020; border:none">        
+                            CATEGORIES &nbsp<span class="glyphicon glyphicon-th-list"></span>
+                            </button>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="text-center"><a href="#redirect-1">ENGINEERING</a></li>
+                            <li class="text-center"><a href="#redirect-2">DESIGN</a></li>
+                            <li class="text-center"><a href="#redirect-3">NODE.JS</a></li>
+                            <li class="text-center"><a href="#redirect-4">DEVOPS</a></li>
+                            <li class="text-center"><a href="#redirect-5">PRODUCT MANAGEMENT</a></li>
+                        </ul>
+                    </li>
+                     <li class="text-center" id="homepage">
+                        <a href="#">
+                            <button class="btn btn-default" name="subscribe" id="subscribe-button" style="background-color: #F5791F; border:none">
+                                TIPPING<span style="font-weight: 900">SCHOOL</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of navbar-collapse -->
+        </div>
+        <!-- End of navigation container -->
+    </nav>
+    <!--End of Navigation-->
+
+    <!-- Modals -->
+    
+    <!--Subscribe-Modal-->
+    <div id="subscribeModal" class="modal fade" role="dialog">
+        <!--Mdodal dialog box-->
+        <div class="modal-dialog modal-lg">
+            <!--Modal content-->
+            <div class="modal-content" id="subscribe-modal-content">
+                <!--Modal body-->
+                <div class="modal-body text-center" id="subscribe-modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div>
+                        <h1 style="color:black">YOU FIRST</h1>
+                        <p>Sign up to receive emails on latest trends before anyone else.</p>
+                        <form id="newsletterForm" style="text-align:center">
+                            <input type="email" name="subscribe" placeholder="Enter your email" class="form-control" id="subscribe-email-bar" required>
+                            <br><br>
+                            <button class="btn btn-default" name="subscribe" type="submit" id="subscribe-button" class="form-control">
+                                SUBSCRIBE &nbsp<span class="glyphicon glyphicon-envelope" style="color: white"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+    <!--end of Subscribe Modal-->
+    <!--End of Modals-->
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron hero-spacer">
+        <div class="container">    
+            <!--Jumbotron heading area-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 id="featured-header">  Featured Posts  </h3>
+                </div>
+            </div>
+            <!--end of Jumbotron heading area-->
+            <!--Jumbotron Content area-->
+            <div class="row">
+                
+                <div class="row text-left">
+                  <div class="col-md-12">
+                        <div class="col-md-6 col-sm-6 hero-feature">
+                            <a href="#" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero" id="hero1">                                
+                                <div class="caption">
+                                    <h3>TippingSchool: WP Blog Title 1 : Lorem Sit Amet Dior Amer Riol.</h3>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                            
+
+                        <div class="col-md-6 col-sm-6 hero-feature">
+                            <a href="#" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero"  id="hero2">        
+                                <div class="caption">
+                                    <h3>TippingSchool: WP Blog Title 2 : Lorem Sit Amet Dior Amer Riol.</h3>                                        
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row text-left">
+                  <div class="col-md-12">
+                        <div class="col-md-4 col-sm-4 hero-feature">
+                            <a href="#" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero"  id="hero3">                                
+                                <div class="caption">
+                                    <h3>TippingSchool: WP Blog Title 3 : Lorem Sit Amet Dior Amer Riol.</h3>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                            
+
+                        <div class="col-md-4 col-sm-4 hero-feature">
+                            <a href="#" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero" id="hero4">                                
+                                <div class="caption">
+                                    <h3>TippingSchool: WP Blog Title 4 : Lorem Sit Amet Dior Amer Riol.</h3>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 hero-feature">
+                            <a href="#" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero" id="hero5">                                
+                                <div class="caption">
+                                    <h3>TippingSchool: WP Blog Title 5 : Lorem Sit Amet Dior Amer Riol.</h3>                                        
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--end of Jumbotron content area-->
+        </div>
+        <!--end of header container-->
+    </header>
+    <!--end of jumbotron-header-->
+    
+    <!--Main Page content-->
+    <div class="container">
+        <!--redirect empty box-->
+        <div class="row empty-box" id="redirect-1">
+            <div></div>
+        </div>
+        <!--end of redirect empty box-->
+        
+        <!--Category Header-->
+        <div class="row">
+            <div class="col-md-12 category-container">
+                <h1 class="page-header">
+                        <span style="color:#202020; font-weight: bold">|</span> Engineering
+                        
+                    </h1>
+            </div>
+        </div>
+        <!--end of Category Header-->
+
+        <!--Category Body-->
+        <div class="row">
+            <div class="row text-left">
+                <div class="col-md-12">
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=gdev.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/gdev.png" alt="">
+                            <div class="caption">
+                                <h3><%=gdev.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=red.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/red.png" alt="">
+                            <div class="caption">
+                                <h3><%=red.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=sclear.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/sclear.jpg" alt="">
+                            <div class="caption">
+                                <h3><%=sclear.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                        
+                </div>    
+            </div>    
+            
+
+            <div class="col-md-12">
+                <!-- Category Post Area Column-1-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=toptal.items[1].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/toptal.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=toptal.items[1].title%></h3>
+                            </span>
+                        </span>
+                    </a>    
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=sclear.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/sclear.jpg" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=sclear.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=gdev.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/gdev.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=gdev.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-1 end-->
+
+                <!-- Category Post Area Column-2-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=weben.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/weben.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=weben.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=red.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/red.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=red.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=toptal.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/toptal.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=toptal.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-2 end-->
+            </div>   
+        </div>
+        <!--end of Category Body-->
+
+        <!--redirect empty box-->
+        <div class="row empty-box" id="redirect-2">
+            <div></div>
+        </div>
+        <!--end of redirect empty box-->
+    
+        <!--Category Header-->
+        <div class="row">
+            <div class="col-md-12 category-container">
+                <h1 class="page-header">
+                        <span style="color:#202020; font-weight: bold">|</span> Design
+                       
+                    </h1>
+            </div>
+        </div>
+        <!--end of Category Header-->
+
+        <!--Category Body-->
+        <div class="row">
+            <div class="row text-left">
+                <div class="col-md-12">
+                    
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=dfix.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/dfix.jpg" alt="">
+                            <div class="caption">
+                                <h3><%=dfix.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=wdledger.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/wdledger.png" alt="">
+                            <div class="caption">
+                                <h3><%=wdledger.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=dmodo.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/dmodo.png" alt="">
+                            <div class="caption">
+                                <h3><%=dmodo.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                        
+                </div>    
+            </div>
+            <div class="col-md-12">
+                <!-- Category Post Area Column-1-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=wdledger.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/wdledger.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=wdledger.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=dmodo.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dmodo.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=dmodo.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=dfix.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dfix.jpg" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=dfix.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-1 end-->
+
+                <!-- Category Post Area Column-2-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=dmodo.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dmodo.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=dmodo.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=dfix.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dfix.jpg" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=dfix.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=wdledger.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/wdledger.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=wdledger.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-2 end-->
+            </div>   
+        </div>
+        <!--end of Category Body-->
+
+        <!--redirect empty box-->
+        <div class="row empty-box" id="redirect-3">
+            <div></div>
+        </div>
+        <!--end of redirect empty box-->
+    
+        <!--Category Header-->
+        <div class="row">
+            <div class="col-md-12 category-container">
+                <h1 class="page-header">
+                        <span style="color:#202020; font-weight: bold">|</span> Node.JS
+                        
+                    </h1>
+            </div>
+        </div>
+        <!--end of Category Header-->
+
+        <!--Category Body-->
+        <div class="row">
+            <div class="row text-left">
+                <div class="col-md-12">
+                    
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=nsource.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/nodesource.png" alt="">
+                            <div class="caption">
+                                <h3><%=nsource.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=spnode.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/sitepoint.jpg" alt="">
+                            <div class="caption">
+                                <h3><%=spnode.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=nweekly.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/nodeweekly.png" alt="">
+                            <div class="caption">
+                                <h3><%=nweekly.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                        
+                </div>    
+            </div>
+            <div class="col-md-12">
+                <!-- Category Post Area Column-1-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=spnode.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/sitepoint.jpg" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=spnode.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=nweekly.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/nodeweekly.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=nweekly.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=nsource.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/nodesource.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=nsource.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-1 end-->
+
+                <!-- Category Post Area Column-2-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=nweekly.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/nodeweekly.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=nweekly.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=nsource.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/nodesource.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=nsource.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=spnode.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/sitepoint.jpg" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=spnode.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-2 end-->
+            </div>   
+        </div>
+        <!--end of Category Body-->
+
+        <!--redirect empty box-->
+        <div class="row empty-box" id="redirect-4">
+            <div></div>
+        </div>
+        <!--end of redirect empty box-->
+    
+        <!--Category Header-->
+        <div class="row">
+            <div class="col-md-12 category-container">
+                <h1 class="page-header">
+                        <span style="color:#202020; font-weight: bold">|</span> DevOps
+                        
+                    </h1>
+            </div>
+        </div>
+        <!--end of Category Header-->
+
+        <!--Category Body-->
+        <div class="row">
+            <div class="row text-left">
+                <div class="col-md-12">
+                    
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=devops.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/devops.png" alt="">
+                            <div class="caption">
+                                <h3><%=devops.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=dzone.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/dzone.png" alt="">
+                            <div class="caption">
+                                <h3><%=dzone.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=devopguys.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/dopsguys.png" alt="">
+                            <div class="caption">
+                                <h3><%=devopguys.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                        
+                </div>    
+            </div>
+            <div class="col-md-12">
+                <!-- Category Post Area Column-1-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=dzone.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dzone.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=dzone.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=devopguys.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dopsguys.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=devopguys.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=devops.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/devops.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=devops.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-1 end-->
+
+                <!-- Category Post Area Column-2-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=devopguys.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dopsguys.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=devopguys.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=devops.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/devops.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=devops.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=dzone.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/dzone.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=dzone.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-2 end-->
+            </div>   
+        </div>
+        <!--end of Category Body-->
+
+        <!--redirect empty box-->
+        <div class="row empty-box" id="redirect-5">
+            <div></div>
+        </div>
+        <!--end of redirect empty box-->
+    
+        <!--Category Header-->
+        <div class="row">
+            <div class="col-md-12 category-container">
+                <h1 class="page-header">
+                        <span style="color:#202020; font-weight: bold">|</span> Product Management
+                        
+                    </h1>
+            </div>
+        </div>
+        <!--end of Category Header-->
+
+        <!--Category Body-->
+        <div class="row">
+            <div class="row text-left">
+                <div class="col-md-12">
+                    
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=proplan.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/prodplan.png" alt="">
+                            <div class="caption">
+                                <h3><%=proplan.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=aha.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/aha.png" alt="">
+                            <div class="caption">
+                                <h3><%=aha.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a href="<%=mtpro.items[1].link%>" target="_blank">
+                        <div class="thumbnail thumbnail-jumbotron hero">
+                            <img src="../images/mtproduct.png" alt="">
+                            <div class="caption">
+                                <h3><%=mtpro.items[1].title%></h3>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                        
+                </div>    
+            </div>
+            <div class="col-md-12">
+                <!-- Category Post Area Column-1-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=aha.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/aha.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=aha.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=mtpro.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/mtproduct.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=mtpro.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=proplan.items[3].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/prodplan.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=proplan.items[3].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-1 end-->
+
+                <!-- Category Post Area Column-2-->
+                <div class="col-md-6 col-sm-6 text-right">
+                    <!--Post-start-->
+                    <a href="<%=mtpro.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/mtproduct.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=mtpro.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                     <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=proplan.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/prodplan.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=proplan.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                    <!--Post-start-->
+                    <a href="<%=aha.items[2].link%>" target="_blank">
+                        <span class="custom-thumbnail thumbnail-jumbotron">
+                        <span class="thumbnail-image"><span class="helper"></span><img src="../images/aha.png" alt=""></span>
+                            <span class="caption thumbnail-content">
+                                <h3><%=aha.items[2].title%></h3>
+                            </span>
+                        </span>
+                    </a>
+                    <!--Post-end-->
+                </div>
+                <!--/Category Post Area Column-2 end-->
+            </div>   
+        </div>
+        <!--end of Category Body-->
+
+         <!--redirect empty box-->
+        <div class="row empty-box" id="redirect-end-1">
+            <div></div>
+        </div>
+        <!--end of redirect empty box-->
+         <!--redirect empty box-->
+        <div class="row empty-box" id="redirect-end-2">
+            <div></div>
+        </div>
+        <!--end of redirect empty box-->
+
+    </div>
+    <!-- end of Main Page content-->
+
+    <!--Footer content-->
+    <div class="container" id="footer-container">
+         <div class="row text-center footer-row">
+            <!-- Footer body-->
+            <footer>                
+                <div class="col-lg-12">   
+                    <p> &nbsp &nbsp &nbsp Copyright <span id = "year"></span> &copy; <span style="font-weight: 400">TECH</span><span style="font-weight: 900">JUMP</span><span style="font-weight: 400">.TIPPINGSCHOOL.COM</span></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- end of Footer content-->
+
+     <!-- jQuery -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--custom jQuery -->
+    <script src="./js/script.js"></script>
+
+    <!--  -->
+
+</body>
+</html>
