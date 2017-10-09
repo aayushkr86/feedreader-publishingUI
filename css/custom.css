@@ -307,3 +307,16 @@ footer {
 #footer-container .row{
     background-color: #202020;
 }
+
+.more{
+    text-align: center;
+    margin-top : 150%;
+}
+
+.iconText{
+    font-size : 40px;
+    border : 1px solid #F5791F;
+    border-radius : 6px;
+    color : #FFF;
+    background-color : #F5791F;
+}
