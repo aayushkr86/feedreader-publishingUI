@@ -272,6 +272,7 @@ body a:hover {
 .thumbnail {
     box-shadow: 0 5px 6px -6px #222;
     margin-bottom: 10px;
+    max-height: 260px;
 }
 
 .thumbnail-jumbotron p {
