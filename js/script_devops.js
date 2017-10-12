@@ -20,7 +20,7 @@ req.onload = function(){
             
             
             var cardImage = document.createElement("img");
-            cardImage.setAttribute("src", "./images/nodeweekly.png");
+            cardImage.setAttribute("src", "./images/prodplan.jpg");
             
             
             
