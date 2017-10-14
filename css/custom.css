@@ -327,3 +327,12 @@ footer {
     color : #FFF;
     background-color : #F5791F;
 }
+
+a.backIcon:visited{
+    text-decoration : none;
+    color : #000;
+}
+a.more:visited{
+    text-decoration: none;
+    color : #000;
+}
