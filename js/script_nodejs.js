@@ -2,7 +2,7 @@ var req = new XMLHttpRequest();
 req.open("GET", "http://localhost:4000/feeds/published/nodejs", true);
 req.send();
 req.onload = function(){
-    json = JSON.parse(req.response);
+   let json = JSON.parse(req.response);
     var len = json.length;
     for(var i = 0; i < len; i++){
         if(len > 0){

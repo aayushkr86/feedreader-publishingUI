@@ -212,12 +212,11 @@
                 <!--end of redirect empty box-->
         
                 <!--Category Header-->
-                <div class="row">
+                <div class="row" id = "engineering">
                     <div class="col-md-12 category-container">
                         <h1 class="page-header">
                                 <span style="color:#202020; font-weight: bold">|</span> Engineering
-                                
-                            </h1>
+                        </h1>
                     </div>
                 </div>
                 <!--end of Category Header-->
@@ -227,41 +226,41 @@
                 <div class="row text-left">
                         <div class="col-md-11">
                             <div class="col-md-4 col-sm-4 hero-feature">
-                                <a href="<%=gdev.items[1].link%>" target="_blank">
+                                <a class = "extLink" target="_blank">
                                 <div class="thumbnail thumbnail-jumbotron hero">
-                                    <img src="../images/gdev.png" alt="">
+                                    <img class = "imageRandom"/>
                                     <div class="caption">
-                                        <h3><%=gdev.items[1].title%></h3>
+                                        <h3 class = "feedTitle"></h3>
                                     </div>
                                 </div>
                                 </a>
                             </div>
 
                             <div class="col-md-4 col-sm-4 hero-feature">
-                                <a href="<%=red.items[1].link%>" target="_blank">
-                                <div class="thumbnail thumbnail-jumbotron hero">
-                                    <img src="../images/red.png" alt="">
-                                    <div class="caption">
-                                        <h3><%=red.items[1].title%></h3>
+                                <a class = "extLink" target="_blank">
+                                    <div class="thumbnail thumbnail-jumbotron hero">
+                                        <img class = "imageRandom"/>
+                                        <div class="caption">
+                                            <h3 class = "feedTitle"></h3>
+                                        </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
 
                             <div class="col-md-4 col-sm-4 hero-feature">
-                                <a href="<%=sclear.items[1].link%>" target="_blank">
+                                <a class = "extLink" target="_blank">
                                 <div class="thumbnail thumbnail-jumbotron hero">
-                                    <img src="../images/sclear.jpg" alt="">
+                                    <img class = "imageRandom"/>
                                     <div class="caption">
-                                        <h3><%=sclear.items[1].title%></h3>
+                                        <h3 class = "feedTitle"></h3>
                                     </div>
                                 </div>
                                 </a>
                             </div>
                             
                         </div>  
-                        <div class = "col-md-1">
-                            <div class = "more"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"><span class = "iconText">More</span></i></div>  
+                        <div class = "col-md-1 more">
+                            <a href = "./engineering.html" class = "more"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"><span class = "iconText">More</span></i></a>
                         </div>      
                 </div>
         </div>
@@ -274,7 +273,7 @@
             <!--end of redirect empty box-->
     
             <!--Category Header-->
-                <div class="row">
+                <div class="row" id = "design-title">
                     <div class="col-md-12 category-container">
                         <h1 class="page-header">
                                 <span style="color:#202020; font-weight: bold">|</span> Design
@@ -288,43 +287,43 @@
         <div class="row">
             <div class="row text-left">
                 <div class="col-md-11">
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a class = "extLink" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero">
+                                <img src="./images/hero3.jpg" alt="">
+                                <div class="caption">
+                                    <h3 class = "feedTitle"></h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a class = "extLink" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero">
+                                <img src="./images/hero3.jpg" alt="">
+                                <div class="caption">
+                                    <h3 class = "feedTitle"></h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 hero-feature">
+                        <a class = "extLink" target="_blank">
+                            <div class="thumbnail thumbnail-jumbotron hero">
+                                <img src="./images/hero3.jpg" alt="">
+                                <div class="caption">
+                                    <h3 class = "feedTitle"></h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     
-                    <div class="col-md-4 col-sm-4 hero-feature">
-                        <a href="<%=dfix.items[1].link%>" target="_blank">
-                        <div class="thumbnail thumbnail-jumbotron hero">
-                            <img src="../images/dfix.jpg" alt="">
-                            <div class="caption">
-                                <h3><%=dfix.items[1].title%></h3>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 hero-feature">
-                        <a href="<%=wdledger.items[1].link%>" target="_blank">
-                        <div class="thumbnail thumbnail-jumbotron hero">
-                            <img src="../images/wdledger.png" alt="">
-                            <div class="caption">
-                                <h3><%=wdledger.items[1].title%></h3>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 hero-feature">
-                        <a href="<%=dmodo.items[1].link%>" target="_blank">
-                        <div class="thumbnail thumbnail-jumbotron hero">
-                            <img src="../images/dmodo.png" alt="">
-                            <div class="caption">
-                                <h3><%=dmodo.items[1].title%></h3>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
                         
                 </div>   
-                <div class = "col-md-1">
-                    <div class = "more"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"><span class = "iconText">More</span></i></div> 
+                <div class = "col-md-1 more">
+                    <a href = "./design.html" class = "more"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"><span class = "iconText">More</span></i></a>
                 </div>
             </div>
         </div>
@@ -475,7 +474,7 @@
                 <h1 class="page-header">
                         <span style="color:#202020; font-weight: bold">|</span> Product Management
                         
-                    </h1>
+                </h1>
             </div>
         </div>
         <!--end of Category Header-->
@@ -483,41 +482,44 @@
         <!--Category Body-->
         <div class="row">
             <div class="row text-left">
-                <div class="col-md-12">
+                <div class="col-md-11">
                     
                     <div class="col-md-4 col-sm-4 hero-feature">
-                        <a href="<%=proplan.items[1].link%>" target="_blank">
+                        <a class = "extLink" target="_blank">
                         <div class="thumbnail thumbnail-jumbotron hero">
-                            <img src="../images/prodplan.png" alt="">
+                            <img src="./images/aha.png" alt="">
                             <div class="caption">
-                                <h3><%=proplan.items[1].title%></h3>
+                                <h3 class = "feedTitle"></h3>
                             </div>
                         </div>
                         </a>
                     </div>
 
                     <div class="col-md-4 col-sm-4 hero-feature">
-                        <a href="<%=aha.items[1].link%>" target="_blank">
+                        <a class = "extLink" target="_blank">
                         <div class="thumbnail thumbnail-jumbotron hero">
-                            <img src="../images/aha.png" alt="">
+                            <img src="./images/aha.png" alt="">
                             <div class="caption">
-                                <h3><%=aha.items[1].title%></h3>
+                                <h3 class = "feedTitle"></h3>
                             </div>
                         </div>
                         </a>
                     </div>
 
                     <div class="col-md-4 col-sm-4 hero-feature">
-                        <a href="<%=mtpro.items[1].link%>" target="_blank">
+                        <a class = "extLink" target="_blank">
                         <div class="thumbnail thumbnail-jumbotron hero">
-                            <img src="../images/mtproduct.png" alt="">
+                            <img src="./images/aha.png" alt="">
                             <div class="caption">
-                                <h3><%=mtpro.items[1].title%></h3>
+                                <h3 class = "feedTitle"></h3>
                             </div>
                         </div>
                         </a>
                     </div>
                         
+                </div>
+                <div class = "col-md-1 more">
+                    <a href = "./product.html" class = "more"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"><span class = "iconText">More</span></i></a>
                 </div>    
             </div>
         </div>

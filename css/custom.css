@@ -336,3 +336,7 @@ a.more:visited{
     text-decoration: none;
     color : #000;
 }
+
+img.imageRandom{
+    width : 250px;
+}

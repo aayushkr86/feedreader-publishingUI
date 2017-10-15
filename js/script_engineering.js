@@ -1,9 +1,10 @@
-var req = new XMLHttpRequest();
-req.open("GET", "http://localhost:4000/feeds/published/devops", true);
+let req = new XMLHttpRequest();
+req.open("GET", "http://localhost:4000/feeds/published/design", true);
 req.send();
 req.onload = function(){
    let json = JSON.parse(req.response);
-    var len = json.length;
+    console.log(json);
+    let len = json.length;
     for(var i = 0; i < len; i++){
         if(len > 0){
             var cardDiv = document.createElement("div");
@@ -20,7 +21,7 @@ req.onload = function(){
             
             
             var cardImage = document.createElement("img");
-            cardImage.setAttribute("src", "./images/prodplan.jpg");
+            cardImage.setAttribute("src", "./images/hero2.png");
             
             
             
@@ -44,7 +45,4 @@ req.onload = function(){
             cardContainer.appendChild(cardDiv);
         }     
     }
-
 }
-
-
