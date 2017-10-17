@@ -5,6 +5,8 @@ req.onload = function(){
    let json = JSON.parse(req.response);
     console.log(json);
     let len = json.length;
+    let imageArray = ["./images/Product/Product1.png","./images/Product/Product2.png", "./images/Product/Product3.png", "./images/Product/Product4.png", "./images/Product/Product5.png", "./images/Product/Product6.png", "./images/Product/Product7.png", "./images/Product/Product8.png", "./images/Product/Product9.png", "./images/Product/Product10.png"];
+    let imageArrayLength = imageArray.length;
     for(var i = 0; i < len; i++){
         if(len > 0){
             var cardDiv = document.createElement("div");
@@ -21,7 +23,9 @@ req.onload = function(){
             
             
             var cardImage = document.createElement("img");
-            cardImage.setAttribute("src", "./images/aha.png");
+            let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
+            cardImage.setAttribute("src", imageArray[imageIndex]);
+            
             
             
             

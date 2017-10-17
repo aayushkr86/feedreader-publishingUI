@@ -5,6 +5,8 @@ req.onload = function(){
    let json = JSON.parse(req.response);
     console.log(json);
     let len = json.length;
+    let imageArray = ["./images/Design/Design1.png","./images/Design/Design2.png", "./images/Design/Design3.png", "./images/Design/Design4.png", "./images/Design/Design5.png", "./images/Design/Design6.png", "./images/Design/Design7.png", "./images/Design/Design8.png", "./images/Design/Design9.png", "./images/Design/Design10.png", "./images/Design/Design11.png"];
+    let imageArrayLength = imageArray.length;
     for(var i = 0; i < len; i++){
         if(len > 0){
             var cardDiv = document.createElement("div");
@@ -14,14 +16,14 @@ req.onload = function(){
             cardHyperlink.setAttribute("class", "extLink");
             cardHyperlink.setAttribute("target", "_blank");
             cardHyperlink.setAttribute("href", json[i].link);
-            
             var thumbNail = document.createElement("div");
             thumbNail.setAttribute("class", "thumbnail thumbnail-jumbotron hero");
             
             
             
             var cardImage = document.createElement("img");
-            cardImage.setAttribute("src", "./images/hero2.png");
+            let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
+            cardImage.setAttribute("src", imageArray[imageIndex]);
             
             
             

@@ -5,8 +5,11 @@ req.onload = function(){
    let json = JSON.parse(req.response);
     console.log(json);
     let len = json.length;
+    let imageArray = ["./images/Engineering/Engineering1.png","./images/Engineering/Engineering2.jpg", "./images/Engineering/Engineering3.png", "./images/Engineering/Engineering4.png", "./images/Engineering/Engineering5.jpg", "./images/Engineering/Engineering6.jpg", "./images/Engineering/Engineering7.jpg", "./images/Engineering/Engineering8.png", "./images/Engineering/Engineering9.png", "./images/Engineering/Engineering10.jpg", "./images/Engineering/Engineering11.png"];
+    let imageArrayLength = imageArray.length;
     for(var i = 0; i < len; i++){
         if(len > 0){
+            
             var cardDiv = document.createElement("div");
             cardDiv.setAttribute("class", "col-md-4 col-sm-4 hero-feature");
             
@@ -21,8 +24,8 @@ req.onload = function(){
             
             
             var cardImage = document.createElement("img");
-            cardImage.setAttribute("src", "./images/hero2.png");
-            
+            let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
+            cardImage.setAttribute("src", imageArray[imageIndex]);
             
             
             var caption = document.createElement("div");
