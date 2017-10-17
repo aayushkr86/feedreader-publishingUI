@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
     var feedTitle = document.querySelectorAll(".feedTitle");
+    var feedDescription = document.querySelectorAll(".feedDescription");
     var extLink = document.querySelectorAll(".extLink");
     var imageRandom = document.querySelectorAll(".imageRandom");
     // for Engineering section
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
         for(var i = 0; i < 3; i++){
             let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
             feedTitle[i].textContent = json[i].title;
+            feedDescription[i].textContent = json[i].description.substring(0,200) + "...";
             extLink[i].setAttribute("href", json[i].link);
             imageRandom[i].setAttribute("src", imageArray[imageIndex]);
         }
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
         for(var i = 3; i < 6; i++){
             let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
             feedTitle[i].textContent = json[i - 3].title;
+            feedDescription[i].textContent = json[i - 3].description.substring(0,200) + "...";
             extLink[i].setAttribute("href", json[i - 3].link);
             imageRandom[i].setAttribute("src", imageArray[imageIndex]);
         }
@@ -55,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function(){
         for(var i = 6; i < 9; i++){
             let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
             feedTitle[i].textContent = json[i - 6].title;
+            feedDescription[i].textContent = json[i - 6].description.substring(0,200) + "...";
             extLink[i].setAttribute("href", json[i - 6].link);
             imageRandom[i].setAttribute("src", imageArray[imageIndex]);
         }
@@ -73,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(){
         for(var i = 9; i < 12; i++){
             let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
             feedTitle[i].textContent = json[i - 9].title;
+            feedDescription[i].textContent = json[i - 9].description.substring(0,200) + "...";
             extLink[i].setAttribute("href", json[i - 9].link);
             imageRandom[i].setAttribute("src", imageArray[imageIndex]);
         }
@@ -91,6 +96,7 @@ document.addEventListener("DOMContentLoaded", function(){
         for(var i = 12; i < 15; i++){
             let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
             feedTitle[i].textContent = json[i - 12].title;
+            feedDescription[i].textContent = json[i - 12].description.substring(0,200) + "...";
             extLink[i].setAttribute("href", json[i - 12].link);
             imageRandom[i].setAttribute("src", imageArray[imageIndex]);
         }

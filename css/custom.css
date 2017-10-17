@@ -272,7 +272,7 @@ body a:hover {
 .thumbnail {
     box-shadow: 0 5px 6px -6px #222;
     margin-bottom: 10px;
-    max-height: 260px;
+    height: 375px;
 }
 
 .thumbnail-jumbotron p {
@@ -339,4 +339,17 @@ a.more:visited{
 
 img.imageRandom{
     width : 250px;
+}
+
+
+.feedTitle{
+    margin: 10px 0 0px 0;
+    max-height: 15px;
+    font-size : 15px;
+    font-weight : 600;
+}
+
+.feedDescription{
+    font-size: 15px;
+    color : rgb(73, 71, 71);
 }

@@ -25,6 +25,7 @@ req.onload = function(){
             var cardImage = document.createElement("img");
             let imageIndex = Math.round(Math.random() * (imageArrayLength - 1));
             cardImage.setAttribute("src", imageArray[imageIndex]);
+            cardImage.setAttribute("class", "imageRandom");
             
             
             
@@ -37,6 +38,10 @@ req.onload = function(){
             feedTitle.setAttribute("class", "feedTitle");
             feedTitle.textContent = json[i].title;
             
+            var feedDescription = document.createElement("h3");
+            feedDescription.setAttribute("class", "feedDescription");
+            feedDescription.textContent = json[i].description.substring(0,200) + "...";
+            
             
             // appending to outer card container
             var cardContainer = document.querySelector(".cardContainer");
@@ -46,6 +51,7 @@ req.onload = function(){
             cardHyperlink.appendChild(thumbNail);
 
             caption.appendChild(feedTitle);
+            caption.appendChild(feedDescription);
             cardContainer.appendChild(cardDiv);
         }     
     }
