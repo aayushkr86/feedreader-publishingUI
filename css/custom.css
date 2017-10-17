@@ -320,6 +320,7 @@ footer {
 }
 
 .iconText{
+    padding: 0 5px;
     display: inline-block;
     font-size : 25px;
     border : 1px solid #25211e;
@@ -344,7 +345,6 @@ img.imageRandom{
 
 .feedTitle{
     margin: 10px 0 0px 0;
-    max-height: 15px;
     font-size : 15px;
     font-weight : 600;
 }
