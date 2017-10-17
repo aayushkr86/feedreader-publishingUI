@@ -112,8 +112,8 @@ body a:hover {
 }
 
 .hero-feature {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #hero1 {
@@ -322,10 +322,10 @@ footer {
 .iconText{
     display: inline-block;
     font-size : 25px;
-    border : 1px solid #F5791F;
+    border : 1px solid #25211e;
     border-radius : 6px;
     color : #FFF;
-    background-color : #F5791F;
+    background-color : #25211e;
 }
 
 a.backIcon:visited{
