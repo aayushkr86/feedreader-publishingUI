@@ -275,6 +275,13 @@ body a:hover {
     height: 375px;
 }
 
+@media (max-width:992px) and (min-width : 768px){
+    .thumbnail{
+        height : 450px; 
+    }
+}
+
+
 .thumbnail-jumbotron p {
     font-size: 12px; 
 }
@@ -310,36 +317,59 @@ footer {
 }
 
 .more{
-    width : 20px;
+    padding : 0 5px;
+    font-size : 25px;
+    color : #FFF;
+    border : 1px solid rgb(10, 106, 184);
+    background-color : rgb(10, 106, 184);
+    border-radius: 6px;
+    width : 70px;   
+    margin : 0 auto; 
+    
+}
+a.more:hover{
+    background-color: rgba(24, 167, 185, 0.918);
+    border : 1px solid rgba(24, 167, 185, 0.918);
+}
+a.more:active{
+    color : #FFF;
+}  
+a.more:visited{
+    text-decoration: none;
+    color : #FFF;
+}
+
+.more-centered{
+    text-align:center;
 }
 
 @media(max-width:992px){
-    .more{
-        float : right; 
-    }         
+    
 }
 
-.iconText{
-    padding: 0 5px;
-    display: inline-block;
-    font-size : 25px;
-    border : 1px solid #25211e;
-    border-radius : 6px;
-    color : #FFF;
-    background-color : #25211e;
-}
 
 a.backIcon:visited{
     text-decoration : none;
     color : #000;
 }
-a.more:visited{
-    text-decoration: none;
-    color : #000;
-}
+
 
 img.imageRandom{
-    width : 250px;
+    width : 70%;
+}
+
+@media (max-width: 768px){
+    img.imageRandom{
+        width: 50%;
+        padding: 0px 6%;
+    }
+}
+
+@media (max-width: 500px){
+    img.imageRandom {
+        width: 100%;
+        padding: 0px 6%;
+    }
 }
 
 
@@ -352,4 +382,8 @@ img.imageRandom{
 .feedDescription{
     font-size: 15px;
     color : rgb(73, 71, 71);
+}
+
+.text-left{
+    margin : 0 0;
 }
