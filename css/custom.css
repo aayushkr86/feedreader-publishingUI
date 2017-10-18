@@ -275,6 +275,20 @@ body a:hover {
     height: 375px;
 }
 
+.thumbnail:hover{
+    box-shadow: 0 0 1px 2px rgb(221, 202, 138);
+}
+
+.thumbnailLink{
+    text-decoration : none;
+}
+.thumbnailLink:link{
+    text-decoration: none;
+}
+.thumbnailLink:visited{
+    text-decoration : none;
+}
+
 @media (max-width:992px) and (min-width : 768px){
     .thumbnail{
         height : 450px; 
